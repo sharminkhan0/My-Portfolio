@@ -14,7 +14,7 @@ body {
 
 ul {
   list-style: none;
-  }
+}
 
 header {
   background-color: #fff;
@@ -23,39 +23,87 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 25px;
-  }
+}
   
-  .logo > a {
+.logo > a {
   text-decoration: none;
   color: inherit;
   left: 76px; 
-  }  
+}  
 
-  /*------end of header section--------*/
+/*------end of header section--------*/
 
-  .main-heading {
-    max-height: 800px;
-    min-height: 550px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 7%;
-    border-radius: 0 0 0 4em;
-    background-color: #fff;
-    background-image: url(./resources/images/header-shapes-mobile.png);
-    background-size: 100%;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+.main-heading {
+  max-height: 800px;
+  min-height: 550px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7%;
+  border-radius: 0 0 0 4em;
+  background-color: #fff;
+  background-image: url(./resources/images/header-shapes-mobile.png);
+  background-size: 100%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
   
-  .heading {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100%;
-  }
+.heading {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.title {
+  margin: 10px 0;
+  display: flex;
+  font-family: 'Poppins'sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  color: #172b4d;
+}
+  
+.intro-text {
+  margin: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding-right: 90px;
+  padding-bottom: 10px;
+}
+  
+.connect {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+  
+.social-icons {
+  display: flex;
+  align-items: center;
+  color: #505f79;
+  list-style: none;
+}
+  
+.social-icons > a,
+i {
+  text-decoration: none;
+  color: #505f79;
+  font-size: 1.25rem;
+  padding-right: 1em;
+}
+/*----end of heading section--------*/
   
