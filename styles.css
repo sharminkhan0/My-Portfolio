@@ -106,4 +106,46 @@ i {
   padding-right: 1em;
 }
 /*----end of heading section--------*/
+/*-----------------start of Work section-----------------------------*/ 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.projects-cards {
+  color: #172b4d;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 8em 7% 0 7%;
+  padding: 1em 1em 2em 1em;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 0.25em 0;
+  font-style: normal;
+}
+
+.cl-project {
+  display: flex;
+  align-items: center;
+  padding: 0.25em 0;
+}
+
+.cl-project > p {
+  font-weight: 600;
+}
+
+
   
