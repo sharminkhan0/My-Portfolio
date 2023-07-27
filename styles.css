@@ -62,7 +62,6 @@ header {
 .title {
   margin: 10px 0;
   display: flex;
-  font-family: 'Poppins'sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -73,7 +72,6 @@ header {
   
 .intro-text {
   margin: 10px 0;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -261,7 +259,6 @@ button {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -280,4 +277,48 @@ button {
   margin-top: 8px;
 }
 
+.ab-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-body {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f7f7f9;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  align-items: center;
+}
+
+.skill-into {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  color: #253858;
+  font-size: 15px;
+  padding-top: 4%;
+}
+
+.skill-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1em 2em 0;
+}
+
+.subheading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.skill-details > hr {
+  height: 2px;
+  background: #dfe1e6;
+  border: none;
+}
+
+/* ---------------About section end----------------------*/
   
