@@ -147,5 +147,29 @@ i {
   font-weight: 600;
 }
 
+.jobs {
+  color: #6b778c;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding-right: 2px;
+}
+
+.year {
+  color: #6b778c;
+  font-style: normal;
+  width: 38px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  padding-left: 2px;
+}
+
+.dot {
+  font-size: 0.75em;
+  padding: 0 0.75em;
+  color: #7a869a;
+}
 
   
