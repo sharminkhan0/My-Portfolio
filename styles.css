@@ -207,4 +207,23 @@ i {
   letter-spacing: 0.03em;
 }
 
+button {
+  font-family: inherit;
+  background: #fff;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.05em;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  width: auto;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+.btn-see {
+  width: 128px;
+}
+
   
