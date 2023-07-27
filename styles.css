@@ -62,7 +62,6 @@ header {
 .title {
   margin: 10px 0;
   display: flex;
-  font-family: 'Poppins'sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -71,9 +70,8 @@ header {
   color: #172b4d;
 }
   
-.intro-text {
+.hd-intro-text {
   margin: 10px 0;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -88,7 +86,7 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
   
 .social-icons {
@@ -106,4 +104,221 @@ i {
   padding-right: 1em;
 }
 /*----end of heading section--------*/
+/*-----------------start of Work section-----------------------------*/ 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.projects-cards {
+  color: #172b4d;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 8em 7% 0 7%;
+  padding: 1em 1em 2em 1em;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 0.25em 0;
+  font-style: normal;
+}
+
+.cl-project {
+  display: flex;
+  align-items: center;
+  padding: 0.25em 0;
+}
+
+.cl-project > p {
+  font-weight: 600;
+}
+
+.jobs {
+  color: #6b778c;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding-right: 2px;
+}
+
+.year {
+  color: #6b778c;
+  font-style: normal;
+  width: 38px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  padding-left: 2px;
+}
+
+.dot {
+  font-size: 0.75em;
+  padding: 0 0.75em;
+  color: #7a869a;
+}
+
+.intro-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0.25em 0;
+}
+
+.cl-project > i {
+  color: #c1c7d0;
+  font-size: 0.5rem;
+}
+
+.tools {
+  display: flex;
+  color: #6070ff;
+  margin: 0.25em 0;
+  list-style-type: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.language {
+  color: #6070ff;
+  background-color: #ebebff;
+  margin: 0 0.5rem 0 0;
+  padding: 0.25em 0.75em;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+button {
+  font-family: inherit;
+  background: #fff;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.05em;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  width: auto;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+.btn-see {
+  width: 128px;
+}
+
+/*------end of heading section------------*/
+/*------start of Work section-------------*/ 
+
+.about {
+  background-color: #fff;
+  border-radius: 0 6em 0 0;
+  margin: 8em 0 0 0;
+}
+
+.ab-container {
+  padding: 5em 7% 0 7%;
+}
+
+.ab-heading {
+  width: 100%;
+}
+
+.lg-title {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 52px;
+}
+
+.skill-details {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+  width: 100%;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: normal;
+  margin-left: -20px;
+  margin-right: -12px;
+}
+
+.skills li {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding-right: 150px;
+  margin-top: 8px;
+}
+
+.ab-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-body {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f7f7f9;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  align-items: center;
+}
+
+.skill-into {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  color: #253858;
+  font-size: 15px;
+  padding-top: 4%;
+}
+
+.skill-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1em 2em 0;
+}
+
+.subheading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.skill-details > hr {
+  height: 2px;
+  background: #dfe1e6;
+  border: none;
+}
+
+/* ---------------About section end----------------------*/
   
