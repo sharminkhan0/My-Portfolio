@@ -58,6 +58,11 @@ header {
   transform: translate(0, -11px) rotate(45deg);
 }
 
+.navbar-lists {
+  display: none;
+}
+
+
 
 /*------end of header section--------*/
 
@@ -87,7 +92,7 @@ header {
   height: 100%;
 }
 
-.title {
+.hd-title {
   margin: 10px 0;
   display: flex;
   font-style: normal;
@@ -132,7 +137,7 @@ i {
   padding-right: 1em;
 }
 /*----end of heading section--------*/
-/*-----------------start of Work section-----------------------------*/ 
+/*-----start of Work section--------*/ 
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -410,3 +415,26 @@ button {
 /* ----------Mobile version end-------------*/
 
 
+/* Desktop version of site */
+@media screen and (min-width: 768px) {
+
+  .logo > a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6070ff;
+    margin: 0 0 0 100px;
+    font-size: 18px;
+  }
+
+  .main-heading {
+    border-radius: 0 0 0 4em;
+    background-color: #fff;
+    background-image: url('./recsources/images/Header\ bg.png');
+    background-size: 96%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+}
