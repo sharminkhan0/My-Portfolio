@@ -344,3 +344,41 @@ button {
   font-size: 2.5rem;
   line-height: 52px;
 }
+
+.form-intro {
+  text-align: center;
+  margin-top: 0.75em;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.75em;
+}
+
+.text-input {
+  margin-top: 0.75em;
+  padding: 0.75em;
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 8px;
+}
+
+.form-button {
+  align-self: flex-start;
+}
+
+/* ----------Mobile version end-------------*/
+
+
