@@ -99,7 +99,7 @@ This is a project I did for my responsive portfolio, utilizing Microverse and Gi
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://sharminkhan0.github.io/My-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
