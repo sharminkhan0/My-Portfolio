@@ -318,7 +318,7 @@ main {
   border-radius: 0 0 0 4rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.19);
   background-color: #fff;
-  background-image: url('./recsources/images/header-shape.png');
+  background-image: url('./resources/images/header-shape.png');
   background-size: 100%;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -889,7 +889,7 @@ button[disabled] {
   padding: 3em;
   border-radius: 5em 0 0 0;
   background-color: #6070ff;
-  background-image: url('./recsources/images/contact\ form\ shapes-mobile.png');
+  background-image: url('./resources/images/contact\ form\ background\ shapes.png');
   background-repeat: no-repeat;
   background-position-x: right;
   background-size: contain;
@@ -957,12 +957,12 @@ textarea:focus {
 /* Desktop version of site */
 @media screen and (min-width: 768px) {
 
-  .top-bar {
+  .topbar {
     padding: 0.65rem 6rem;
     align-items: center;
     width: 100%;
     background-color: white;
-    height: 50px;
+    height: 70px;
     z-index: 1000;
   }
 
@@ -1008,7 +1008,7 @@ textarea:focus {
     border-radius: 0 0 0 6em;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.19);
     background-color: #fff;
-    background-image: url('./recsources/images/Header\ bg.png');
+    background-image: url('./resources/images/Header\ bg.png');
     background-size: 96%;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -1100,7 +1100,7 @@ textarea:focus {
 
   .contact-form-container {
     background-color: #6070ff;
-    background-image: url('./recsources/images/contact\ form\ background\ shapes.png');
+    background-image: url('./resources/images/contact\ form\ background\ shapes.png;');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
