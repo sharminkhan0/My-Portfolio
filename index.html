@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pop-up.css" />
   <script src="https://kit.fontawesome.com/8c1870b6fa.js" crossorigin="anonymous"></script>
   <title>Sharmin khan - Portfolio</title>
 </head>
@@ -14,11 +15,11 @@
   <Section id="body-wrapper">
     <header>
       <div class="topbar">
-        <a class="logo" href="#">Sharmin</a>
+        <a class="logo drop-in" href="#">Sharmin</a>
 
         <nav class="navbar">
 
-          <ul class="mobile_navbar" id="mobile_navbar">
+          <ul class="mobile_navbar drop-in" id="mobile_navbar">
             <i class="fa-solid fa-xmark close-icon" onclick="closemenu()"></i>
             <li  class="mobile_navbar-link" onclick="closemenu()"><a  href="#portfolio">Portfolio</a></li>
             <li class="mobile_navbar-link" onclick="closemenu()"><a  href="#about">About</a></li>
@@ -29,7 +30,7 @@
             <li><i class="fa-solid fa-bars menu-icon" onclick="menu_icon()"></i></li>
           </ul>
 
-          <ul class="navbar-lists">      
+          <ul class="navbar-lists drop-in">      
             <li><a class="navbar-link" href="#portfolio">Portfolio</a></li>
             <li><a class="navbar-link" href="#about">About</a></li>         
             <li><a class="navbar-link" href="#contact">Contact</a></li> 
@@ -42,7 +43,7 @@
       <section class="main-heading">
         <section class="heading">
           <div class="container">
-            <h1 class="hd-title type-animation headline-text drop-in"></h1>
+            <h1 class="hd-title type-animation headline-text drop-in" ></h1>
           </div>
           <p class="heading-paragraph supporting-text drop-in-1">
             I'm a software developer! I can help you build a product , feature or
@@ -93,107 +94,12 @@
 
       <!-------------------------------------------End of Header section ----------------------------------------->
       <!-------------------------------------------portfolio section start ---------------------------------------->
-      <section class="projects" id="portfolio">
-        <!-- card 1 -->
-        <ul class="projects-cards zoom-in">
-          <li class="projects-card ">
-            <img src="./resources/images/project1.png" alt="Recent Project" />
-            <div class="projects-card-details">
-              <h2 class="projects-card-title">Tonic</h2>
-              <div class="projects-client">
-                <p class="paragraph">CANOPY</p>
-                <p class="fa-solid fa-circle projects-client-dot"></p>
-                <p class="projects-client-role paragraph">Back End Dev</p>
-                <p class="fa-solid fa-circle projects-client-dot"></p>
-                <p class="projects-client-year paragraph">2015</p>
-              </div>
-              <p class="paragraph intro-text">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-              </p>
-              <ul class="projects-languages">
-                <li class="projects-language">html</li>
-                <li class="projects-language">css</li>
-                <li class="projects-language">javascript</li>
-              </ul>
-              <button class="btn-width">See Project</button>
-            </div>
-          </li>
-
-          <!-- card 2 -->
-          <li class="projects-card">
-            <img src="./resources/images/project2.png" alt="Recent Work" />
-            <div class="projects-card-details">
-              <h2 class="projects-card-title">Multi-Post Stories</h2>
-              <div class="projects-client">
-                <p class="paragraph">CANOPY</p>
-                <p class="fa-solid fa-circle projects-client-dot"></p>
-                <p class="projects-client-role paragraph">Back End Dev</p>
-                <p class="fa-solid fa-circle projects-client-dot"></p>
-                <p class="projects-client-year paragraph">2015</p>
-              </div>
-              <p class="paragraph intro-text">
-                A daily selection of privately personalized reads; no accounts or
-                sign-ups required.
-              </p>
-              <ul class="projects-languages">
-                <li class="projects-language">html</li>
-                <li class="projects-language">css</li>
-                <li class="projects-language">javascript</li>
-              </ul>
-              <button class="btn-width">See Project</button>
-            </div>
-          </li>
-
-          <!-- card 3 -->
-          <li class="projects-card">
-            <img src="./resources/images/project3.png" alt="Recent Work" />
-            <div class="projects-card-details">
-              <h2 class="projects-card-title">Tonic</h2>
-              <div class="projects-client">
-                <p class="paragraph">UBER</p>
-                <p class="fa-solid fa-circle projects-client-dot"></p>
-                <p class="projects-client-role paragraph">Back End Dev</p>
-                <p class="fa-solid fa-circle projects-client-dot"></p>
-                <p class="projects-client-year paragraph">2015</p>
-              </div>
-              <p class="paragraph intro-text">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-              </p>
-              <ul class="projects-languages">
-                <li class="projects-language">html</li>
-                <li class="projects-language">css</li>
-                <li class="projects-language">javascript</li>
-              </ul>
-              <button class="btn-width">See Project</button>
-            </div>
-          </li>
-
-          <!-- card 4 -->
-          <li class="projects-card">
-            <img src="./resources/images/project4.png" alt="Recent Work" />
-            <div class="projects-card-details">
-              <h2 class="projects-card-title">Multi-Post Stories</h2>
-              <div class="projects-client">
-                <p class="paragraph">FACEBOOK</p>
-                <p class="fa-solid fa-circle projects-client-dot"></p>
-                <p class="projects-client-role paragraph">Full Stack Dev</p>
-                <p class="fa-solid fa-circle projects-client-dot"></p>
-                <p class="projects-client-year paragraph">2015</p>
-              </div>
-              <p class="paragraph intro-text">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-              </p>
-              <ul class="projects-languages">
-                <li class="projects-language">html</li>
-                <li class="projects-language">Ruby on rails</li>
-                <li class="projects-language">css</li>
-                <li class="projects-language">javascript</li>
-              </ul>
-              <button class="btn-width">See Project</button>
-            </div>
-          </li>
-        </ul>
+    
+      <section>
+        <div class="recent-work" id="portfolio"></div>
+        <div class="project-popup-container"></div>
       </section>
+       
       <!------------------------------------------------End of Portfolio section------------------------------>
       <!------------------------------------------------About section start----------------------------->
       <section class="about" id="about">
@@ -251,7 +157,7 @@
           <ul class="about-skills-container">
             <li class="about-skill-container">
 
-              <div class="skills">
+              <div class="skills drop-in">
                 <p><strong>Languages</strong></p>
                 <i class="fa-solid fa-angle-down"></i>
               </div>
@@ -259,16 +165,16 @@
 
             <li>
               <ul class="about-skill-body-container">
-                <li class="about-skill-body fly-in-1">
-                  <img class="about-skill-body-img" src="./resources/icons/Ellipse javascript .png" alt="js" />
+                <li class="about-skill-body fly-in-3 zoom-in5">
+                  <img class="about-skill-body-img" src="./recsources/icons/Ellipse javascript .png" alt="js" />
                   <span class="about-skill-text">JavaScript</span>
                 </li>
-                <li class="about-skill-body fly-in-2">
-                  <img class="about-skill-body-img" src="./resources/icons/Ellipse html .png" alt="html" />
+                <li class="about-skill-body fly-in-4 zoom-in5">
+                  <img class="about-skill-body-img" src="./recsources/icons/Ellipse html .png" alt="html" />
                   <span class="about-skill-text">HTML</span>
                 </li>
-                <li class="about-skill-body fly-in-3">
-                  <img class="about-skill-body-img" src="./resources/icons/Ellipse css .png" alt="css" />
+                <li class="about-skill-body fly-in-5 zoom-in6">
+                  <img class="about-skill-body-img" src="./recsources/icons/Ellipse css .png" alt="css" />
                   <span class="about-skill-text">CSS</span>
                 </li>
               </ul>
@@ -276,7 +182,7 @@
 
             <li class="about-skill-container">
               <div class="about-skill-heading">
-                <h4 class="about-subheading">Frameworks</h4>
+                <h4 class="about-subheading drop-in">Frameworks</h4>
                 <i class="fa-solid fa-angle-right"></i>
               </div>
             </li>
@@ -285,7 +191,7 @@
 
             <li class="about-skill-container">
               <div class="about-skill-heading">
-                <h4 class="about-subheading">Skills</h4>
+                <h4 class="about-subheading drop-in">Skills</h4>
                 <i class="fa-solid fa-angle-right"></i>
               </div>
             </li>
@@ -329,11 +235,11 @@
       </section>
     </footer>
   </Section>
-  
   <!---------------------------------------end of Contact form---------------------------------------------------->
   <!---------------------------------------JavaScript Links ---------------------------------------------------->
 
- <script src="index.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/pop-up.js"></script>
 
 </body>
 
