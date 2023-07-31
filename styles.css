@@ -158,6 +158,9 @@ i {
 
 .card > img {
   width: 100%;
+  animation-name: zoom-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .card-title {
@@ -255,6 +258,23 @@ button {
 
 .btn-see {
   width: 128px;
+}
+
+button:hover {
+  background: #8591d7;
+  box-shadow: 0 0.5em 1em #4053fc3d;
+  color: #fff;
+}
+
+button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
 }
 
 /*------end of heading and banner section------------*/
@@ -387,6 +407,13 @@ button {
   margin-top: 0.75em;
 }
 
+.contact-form > input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #f7f7f9;
+  box-shadow: 0 0 2px #f7f7f9;
+}
+
 .text-input {
   margin-top: 0.75em;
   padding: 0.75em;
@@ -405,6 +432,39 @@ button {
 }
 
 /* ----------Mobile version end---------*/
+
+/* ----------Animation start---------*/
+
+/*----color change animation----*/
+@keyframes color-change {
+  0% {
+    color: burlywood;
+  }
+  25% {
+    color: rgb(110, 196, 120);
+  }
+
+  50% {
+    color: #1662e7;
+  }
+
+  75% {
+    color: #c481d8;
+  }
+
+  100% {
+    color: rgb(255, 10, 10);
+  }
+}
+
+/*---- typed animation----*/
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/* ----------Animation end---------*/
 /*------ Desktop version of site-------- */
 
 @media screen and (min-width: 768px) {
