@@ -24,12 +24,41 @@ header {
   align-items: center;
   padding: 25px;
 }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9rem;
+  font-weight: 700;
+  color: #6070ff;
+  font-size: 1.5em;
+  box-shadow: 0 12px 6px -6px rgba(231, 226, 226, 0.9);
+  position: relative;
+}
   
-.logo > a {
+.logo {
   text-decoration: none;
   color: inherit;
   left: 76px; 
+  animation: color-change 5s ease-in-out;
+  transition: all 0.5s ease;
 } 
+
+.logo:hover {
+  transform: scale(1.07);
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+}
+
+.logo:active {
+  background-color: white;
+  color: #1c32ff;
+}
+
+.logo:focus-visible {
+  color: #ffffff;
+}
+
 
 .menu-icon {
   display: none;
@@ -457,10 +486,99 @@ textarea:focus {
   }
 }
 
-/*---- typed animation----*/
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+/*--drop-in animation---*/
+.drop-in {
+  animation: drop-in 1s ease 200ms backwards;
+}
+
+.drop-in-1 {
+  animation: drop-in 1200ms ease 500ms backwards;
+}
+
+.drop-in-2 {
+  animation: drop-in 1500ms ease 800ms backwards;
+}
+
+.drop-in-3 {
+  animation: drop-in 2s ease 1200ms backwards;
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/*--fly-in animation---*/
+.fly-in-1 {
+  animation: fly-in 1s ease 200ms backwards;
+}
+
+.fly-in-2 {
+  animation: fly-in 1200ms ease 500ms backwards;
+}
+
+.fly-in-3 {
+  animation: fly-in 1400ms ease 800ms backwards;
+}
+
+.fly-in-4 {
+  animation: fly-in 1600ms ease 1100ms backwards;
+}
+
+.fly-in-5 {
+  animation: fly-in 1800ms ease 1400ms backwards;
+}
+
+.fly-in-6 {
+  animation: fly-in 2s ease 1700ms backwards;
+}
+
+@keyframes fly-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/*--fade-in animation---*/
+.fade-in-1 {
+  animation: fade-in 1s ease 200ms backwards;
+}
+
+.fade-in-2 {
+  animation: fade-in 1200ms ease 500ms backwards;
+}
+
+.fade-in-3 {
+  animation: fade-in 1400ms ease 800ms backwards;
+}
+
+.fade-in-4 {
+  animation: fade-in 1600ms ease 1100ms backwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /*-----zoom-in animation----*/
