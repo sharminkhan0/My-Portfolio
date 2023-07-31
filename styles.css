@@ -29,6 +29,7 @@ header {
   text-decoration: none;
   color: inherit;
   left: 76px; 
+  animation: color-change 5s ease-in-out;
 } 
 
 .menu-icon {
@@ -60,6 +61,10 @@ header {
 
 .navbar-lists {
   display: none;
+}
+
+.navbar-link:hover {
+  color: #eb45e8;
 }
 
 
@@ -405,6 +410,32 @@ button {
 }
 
 /* ----------Mobile version end---------*/
+
+/* ----------Animation start---------*/
+
+/*----color change animation----*/
+@keyframes color-change {
+  0% {
+    color: burlywood;
+  }
+  25% {
+    color: rgb(110, 196, 120);
+  }
+
+  50% {
+    color: #1662e7;
+  }
+
+  75% {
+    color: #c481d8;
+  }
+
+  100% {
+    color: rgb(255, 10, 10);
+  }
+}
+
+/* ----------Animation end---------*/
 /*------ Desktop version of site-------- */
 
 @media screen and (min-width: 768px) {
