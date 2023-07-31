@@ -155,7 +155,7 @@ header {
   animation: fade-in 1200ms ease 500ms backwards;
 }
 
-.fly-in-3 {
+.fade-in-3 {
   animation: fade-in 1400ms ease 800ms backwards;
 }
 
@@ -167,7 +167,7 @@ header {
   animation: fade-in 1800ms ease 1400ms backwards;
 }
 
-.zoom-in-6 {
+.fade-in-6 {
   animation: fade-in 2s ease 1700ms backwards;
 }
 
@@ -237,6 +237,7 @@ header {
 }
 
 .navbar-link:hover {
+  font-weight: 700;
   color:  #703dc3;
   text-decoration: underline;
   transform: scale(1.07);
@@ -337,7 +338,6 @@ main {
 .hd-title {
   margin: 10px 0;
   display: flex;
-  font-family: 'Poppins'sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
@@ -359,7 +359,6 @@ main {
 
 .heading-paragraph {
   margin: 10px 0;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -384,6 +383,7 @@ main {
 }
 
 .heading-connect:hover {
+  font-weight: 700;
   color:  #703dc3;
   text-decoration: underline;
   transform: scale(1.07);
@@ -532,7 +532,7 @@ button {
   background-image: linear-gradient(60deg, #8a38fe 10%, #b740ed 50%, #8e40f3 100%);
   box-shadow: 0 2px 25px 0 rgba(111, 30, 138, 0.35);
   color: #f4f4fa;
-  border: 1px solid #6070ff;
+  border: 1px solid #0418ca;
   border-radius: 8px;
   padding: 12px;
   font-size: 1.05em;
@@ -573,7 +573,7 @@ button::before {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #6070ff;
+  background-color: #1c31ef;
   border: none;
   transition: all 0.5s;
   border-radius: 7px;
@@ -586,7 +586,7 @@ button:hover {
   box-shadow: 0 0.5em 1em #4053fc3d;
   color: #fff;
   cursor: pointer;
-  border: 1px solid #4f60fd;
+  border: 1px solid #0c22e4;
   box-shadow: 0 10px 30px 0 #8c38fe, 0 5px 0 0 #9c66e5;
   transform:translateY(-5px);
   animation-name: zoom-in;
@@ -596,10 +596,15 @@ button:hover::before {
   width: 100%;
 }
 
-button:active {
+button:hover:active {
   background: #2230d2;
   color: #fff;
 }
+
+button:hover:focus-visible {
+  background: #757ee1;
+  color: #fff;
+} 
 
 button:disabled,
 button[disabled] {
@@ -626,7 +631,6 @@ button[disabled] {
 }
 
 .about-subheading {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -659,7 +663,6 @@ button[disabled] {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -708,7 +711,6 @@ button[disabled] {
 }
 
 .about-skill-text {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
@@ -752,7 +754,6 @@ button[disabled] {
 .contact-form-paragraph {
   text-align: center;
   margin-top: 0.75em;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -778,7 +779,6 @@ textarea:focus {
   padding: 0.75em;
   width: 100%;
   border: 1px solid #cfd8dc;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
