@@ -237,7 +237,7 @@ header {
 }
 
 .navbar-link:hover {
-  font-weight: 700;
+  font-weight: 900;
   color:  #703dc3;
   text-decoration: underline;
   transform: scale(1.07);
