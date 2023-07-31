@@ -20,9 +20,11 @@ function typeWriter() {
       '.type-animation',
     ).innerHTML += ` ${hArr[typeCount]}`;
     typeCount += 1;
-    setTimeout(typeWriter, 300);
+    setTimeout(typeWriter, 400);
   }
 }
+
+typeWriter();
 
 // form validation section
 function validateEmail() {
@@ -42,4 +44,26 @@ submitform.addEventListener('click', () => {
   validateEmail();
 });
 
-typeWriter();
+// local storage section
+const storageData = document.querySelectorAll('.contact-form-input');
+const localStoreValue = {
+  name: '',
+  email: '',
+  message: '',
+};
+storageData.forEach((input) => {
+  input.addEventListener('input', () => {
+    localStoreValue[input.name] = input.value;
+    localStoreValue[input.email] = input.value;
+    localStoreValue[input.message] = input.value;
+    localStorage.setItem('information', JSON.stringify(localStoreValue));
+  });
+});
+const informationStored = JSON.parse(localStorage.getItem('information'));
+if (informationStored) {
+  storageData.forEach((element) => {
+    element.value = informationStored[element.name];
+  });
+}
+
+
