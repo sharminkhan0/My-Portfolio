@@ -155,7 +155,7 @@ header {
   animation: fade-in 1200ms ease 500ms backwards;
 }
 
-.fly-in-3 {
+.fade-in-3 {
   animation: fade-in 1400ms ease 800ms backwards;
 }
 
@@ -167,7 +167,7 @@ header {
   animation: fade-in 1800ms ease 1400ms backwards;
 }
 
-.zoom-in-6 {
+.fade-in-6 {
   animation: fade-in 2s ease 1700ms backwards;
 }
 
@@ -338,7 +338,6 @@ main {
 .hd-title {
   margin: 10px 0;
   display: flex;
-  font-family: 'Poppins'sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
@@ -360,7 +359,6 @@ main {
 
 .heading-paragraph {
   margin: 10px 0;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -628,7 +626,6 @@ button[disabled] {
 }
 
 .about-subheading {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -661,7 +658,6 @@ button[disabled] {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -710,7 +706,6 @@ button[disabled] {
 }
 
 .about-skill-text {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
@@ -754,7 +749,6 @@ button[disabled] {
 .contact-form-paragraph {
   text-align: center;
   margin-top: 0.75em;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -780,7 +774,6 @@ textarea:focus {
   padding: 0.75em;
   width: 100%;
   border: 1px solid #cfd8dc;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
