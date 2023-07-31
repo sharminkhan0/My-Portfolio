@@ -1,313 +1,339 @@
-<meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/8c1870b6fa.js" crossorigin="anonymous"></script>   
-    <title>Sharmin's Portfolio</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/8c1870b6fa.js" crossorigin="anonymous"></script>
+  <title>Sharmin khan - Portfolio</title>
 </head>
+
 <body>
+  <Section id="body-wrapper">
     <header>
-        <h2 class="logo"><a href="#">My Logo</a></h2>
-        <nav>
-          <div class="menu-icon">
-            <img src="./resources/icons/menu.png" alt="menu-icon">
-          </div>
-          <div class="menubar">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-          <ul class="navbar-lists">
-            <li class="navbar-item">
-              <a class="navbar-link" href="#portfolio">Portfolio</a>
-            </li>
-    
-            <li class="navbar_item">
-              <a  class="navbar-link" href="#about">About</a>
-            </li>
-    
-            <li class="navbar_item">
-              <a  class="navbar-link" href="#contact">Contact</a>
-            </li>
+      <div class="topbar">
+        <a class="logo" href="#">Sharmin</a>
+
+        <nav class="navbar">
+
+          <ul class="mobile_navbar" id="mobile_navbar">
+            <i class="fa-solid fa-xmark close-icon" onclick="closemenu()"></i>
+            <li  class="mobile_navbar-link" onclick="closemenu()"><a  href="#portfolio">Portfolio</a></li>
+            <li class="mobile_navbar-link" onclick="closemenu()"><a  href="#about">About</a></li>
+            <li class="mobile_navbar-link" onclick="closemenu()"><a  href="#form">Contact</a></li>
+          </ul>
+
+          <ul class="menu-icon">
+            <li><i class="fa-solid fa-bars menu-icon" onclick="menu_icon()"></i></li>
+          </ul>
+
+          <ul class="navbar-lists">      
+            <li><a class="navbar-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="navbar-link" href="#about">About</a></li>         
+            <li><a class="navbar-link" href="#contact">Contact</a></li> 
           </ul>
         </nav>
-      </header>
-
-      <main class="main-heading">
+      </div>
+    </header>
+    <!-------------------------------------------End of Top Navbar ---------------------------------------->
+    <main>
+      <section class="main-heading">
         <section class="heading">
-          <h1 class="hd-title">I'm Sharmin.<br />Glad to see you!</h1>
-  
-          <p class="hd-intro-text">
+          <div class="container">
+            <h1 class="hd-title type-animation headline-text drop-in"></h1>
+          </div>
+          <p class="heading-paragraph supporting-text drop-in-1">
             I'm a software developer! I can help you build a product , feature or
             website Look through some of my work and experience! If you like what
             you see and have a project you need coded, don't hestiate to contact
             me.
           </p>
-          <h4 class="connect">LET'S CONNECT</h4>
-          <ul class="social-icons">
-            <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <h4 class="heading-connect connect drop-in-2">LET'S CONNECT</h4>
+          <ul class="social-icons drop-in-3">
+
+            <li class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <a class="icons" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                <span class="fa-sr-only">Twitter</span></a>
             </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+            <li class="icon linkedin">
+              <span class="tooltip">LinkedIn</span>
+              <a class="icons" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                <span class="fa-sr-only">LinkedIn</span></a>
             </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-m"></i></i></a>
+
+            <li class="icon mail">
+              <span class="tooltip">Gmail</span>
+              <a class="icons" href="#" target="_blank" rel="noopener">
+                <i class="fa-solid fa-m" aria-hidden="true"></i>
+                <span class="fa-sr-only">Gmail</span></a>
             </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
+
+            <li class="icon github">
+              <span class="tooltip">GitHub</span>
+              <a class="icons" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <span class="fa-sr-only">GitHub</span></a>
             </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-angellist"></i></a>
+
+            <li class="icon wellfound">
+              <span class="tooltip">WellFound</span>
+              <a class="icons" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-angellist" aria-hidden="true"></i>
+                <span class="fa-sr-only">Angellist</span></a>
             </li>
           </ul>
         </section>
-    </main>
+      </section>
 
-     <!-------mobile version headernav setup end---------->
-     <!-------portfolio section start ------------------->
-
-  <section class="projects">
-    <!-- card 1 -->
-    <ul class="projects-cards">
-      <li class="card">
-        <img src="./resources/images/Snapshoot Portfolio 1.png" alt="Recent Project" />
-        <div class="card-details">
-          <h2 class="card-title">Tonic</h2>
-          <div class="cl-project">
-            <p class="pname">CANOPY</p>
-            <p class="fa-solid fa-circle dot"></p>
-            <p class="jobs">Back End Dev</p>
-            <p class="fa-solid fa-circle dot"></p>
-            <p class="year">2015</p>
-          </div>
-          <p class="intro-text">
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="tools">
-            <li class="language">html</li>
-            <li class="language">css</li>
-            <li class="language">javascript</li>
-          </ul>
-          <button class="btn-see">See Project</button>
-        </div>
-      </li>
-
-      <!-- card 2 -->
-      <li class="card">
-        <img src="./resources/images/Snapshoot Portfolio 2.png" alt="Recent Work" />
-        <div class="card-details">
-          <h2 class="card-title">Multi-Post Stories</h2>
-          <div class="cl-project">
-            <p class="pname">CANOPY</p>
-            <p class="fa-solid fa-circle dot"></p>
-            <p class="jobs">Back End Dev</p>
-            <p class="fa-solid fa-circle dot"></p>
-            <p class="year">2015</p>
-          </div>
-          <p class="intro-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="tools">
-            <li class="language">html</li>
-            <li class="language">css</li>
-            <li class="language">javascript</li>
-          </ul>
-          <button class="btn-see">See Project</button>
-        </div>
-      </li>
-
-      <!-- card 3 -->
-      <li class="card">
-        <img src="./resources/images/Snapshoot Portfolio 3.png" alt="Recent Work" />
-        <div class="card-details">
-          <h2 class="card-title">Tonic</h2>
-          <div class="cl-project">
-            <p class="pname">UBER</p>
-            <p class="fa-solid fa-circle dot"></p>
-            <p class="jobs ">Back End Dev</p>
-            <p class="fa-solid fa-circle dot"></p>
-            <p class="year ">2015</p>
-          </div>
-          <p class="intro-text">
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="tools">
-            <li class="language">html</li>
-            <li class="language">css</li>
-            <li class="language">javascript</li>
-          </ul>
-          <button class="btn-see">See Project</button>
-        </div>
-      </li>
-
-      <!-- card 4 -->
-      <li class="card">
-          <img src="./resources/images/Snapshoot Portfolio 4.png" alt="Recent Work" />
-          <div class="card-details">
-            <h2 class="card-title">Multi-Post Stories</h2>
-            <div class="cl-project">
-              <p class="pname">FACEBOOK</p>
-              <p class="fa-solid fa-circle dot"></p>
-              <p class="jobs">Full Stack Dev</p>
-              <p class="fa-solid fa-circle dot"></p>
-              <p class="year">2015</p>
+      <!-------------------------------------------End of Header section ----------------------------------------->
+      <!-------------------------------------------portfolio section start ---------------------------------------->
+      <section class="projects" id="portfolio">
+        <!-- card 1 -->
+        <ul class="projects-cards zoom-in">
+          <li class="projects-card ">
+            <img src="./resources/images/project1.png" alt="Recent Project" />
+            <div class="projects-card-details">
+              <h2 class="projects-card-title">Tonic</h2>
+              <div class="projects-client">
+                <p class="paragraph">CANOPY</p>
+                <p class="fa-solid fa-circle projects-client-dot"></p>
+                <p class="projects-client-role paragraph">Back End Dev</p>
+                <p class="fa-solid fa-circle projects-client-dot"></p>
+                <p class="projects-client-year paragraph">2015</p>
+              </div>
+              <p class="paragraph intro-text">
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <ul class="projects-languages">
+                <li class="projects-language">html</li>
+                <li class="projects-language">css</li>
+                <li class="projects-language">javascript</li>
+              </ul>
+              <button class="btn-width">See Project</button>
             </div>
-            <p class="intro-text">
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
+          </li>
+
+          <!-- card 2 -->
+          <li class="projects-card">
+            <img src="./resources/images/project2.png" alt="Recent Work" />
+            <div class="projects-card-details">
+              <h2 class="projects-card-title">Multi-Post Stories</h2>
+              <div class="projects-client">
+                <p class="paragraph">CANOPY</p>
+                <p class="fa-solid fa-circle projects-client-dot"></p>
+                <p class="projects-client-role paragraph">Back End Dev</p>
+                <p class="fa-solid fa-circle projects-client-dot"></p>
+                <p class="projects-client-year paragraph">2015</p>
+              </div>
+              <p class="paragraph intro-text">
+                A daily selection of privately personalized reads; no accounts or
+                sign-ups required.
+              </p>
+              <ul class="projects-languages">
+                <li class="projects-language">html</li>
+                <li class="projects-language">css</li>
+                <li class="projects-language">javascript</li>
+              </ul>
+              <button class="btn-width">See Project</button>
+            </div>
+          </li>
+
+          <!-- card 3 -->
+          <li class="projects-card">
+            <img src="./resources/images/project3.png" alt="Recent Work" />
+            <div class="projects-card-details">
+              <h2 class="projects-card-title">Tonic</h2>
+              <div class="projects-client">
+                <p class="paragraph">UBER</p>
+                <p class="fa-solid fa-circle projects-client-dot"></p>
+                <p class="projects-client-role paragraph">Back End Dev</p>
+                <p class="fa-solid fa-circle projects-client-dot"></p>
+                <p class="projects-client-year paragraph">2015</p>
+              </div>
+              <p class="paragraph intro-text">
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <ul class="projects-languages">
+                <li class="projects-language">html</li>
+                <li class="projects-language">css</li>
+                <li class="projects-language">javascript</li>
+              </ul>
+              <button class="btn-width">See Project</button>
+            </div>
+          </li>
+
+          <!-- card 4 -->
+          <li class="projects-card">
+            <img src="./resources/images/project4.png" alt="Recent Work" />
+            <div class="projects-card-details">
+              <h2 class="projects-card-title">Multi-Post Stories</h2>
+              <div class="projects-client">
+                <p class="paragraph">FACEBOOK</p>
+                <p class="fa-solid fa-circle projects-client-dot"></p>
+                <p class="projects-client-role paragraph">Full Stack Dev</p>
+                <p class="fa-solid fa-circle projects-client-dot"></p>
+                <p class="projects-client-year paragraph">2015</p>
+              </div>
+              <p class="paragraph intro-text">
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <ul class="projects-languages">
+                <li class="projects-language">html</li>
+                <li class="projects-language">Ruby on rails</li>
+                <li class="projects-language">css</li>
+                <li class="projects-language">javascript</li>
+              </ul>
+              <button class="btn-width">See Project</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!------------------------------------------------End of Portfolio section------------------------------>
+      <!------------------------------------------------About section start----------------------------->
+      <section class="about" id="about">
+        <div class="about-container">
+          <div class="about-heading">
+            <h2 class="hd-title about-title headline-text drop-in">About Myself</h2>
+            <p class="heading-paragraph supporting-text drop-in-1 paragraph">
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website. Look through some of my work and experience!
+              If you like what you see and have a project you need coded,
+              don’t hesitate to contact me.
             </p>
-            <ul class="tools">
-              <li class="language">html</li>
-              <li class="language">Ruby on rails</li>
-              <li class="language">css</li>
-              <li class="language">javascript</li>
+
+            <p class="heading-connect connect drop-in-2">LET'S CONNECT</p>
+            <ul class="social-icons drop-in-3">
+
+              <li class="icon twitter">
+                <span class="tooltip">Twitter</span>
+                <a class="icons" href="#" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                  <span class="fa-sr-only">Twitter</span></a>
+              </li>
+
+              <li class="icon linkedin">
+                <span class="tooltip">LinkedIn</span>
+                <a class="icons" href="#" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                  <span class="fa-sr-only">LinkedIn</span></a>
+              </li>
+
+              <li class="icon mail">
+                <span class="tooltip">Gmail</span>
+                <a class="icons" href="#" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-m" aria-hidden="true"></i>
+                  <span class="fa-sr-only">Gmail</span></a>
+              </li>
+
+              <li class="icon github">
+                <span class="tooltip">GitHub</span>
+                <a class="icons" href="#" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span class="fa-sr-only">GitHub</span></a>
+              </li>
+
+              <li class="icon wellfound">
+                <span class="tooltip">WellFound</span>
+                <a class="icons" href="#" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-angellist" aria-hidden="true"></i>
+                  <span class="fa-sr-only">Angellist</span></a>
+              </li>
             </ul>
-            <button class="btn-see">See Project</button>
+            <button>Get my resume</button>
           </div>
-        </li>
-      </ul>
-  </section>
 
-  <!--------End of Portfolio section--------->
-   <!-------About section start-------------->
+          <ul class="about-skills-container">
+            <li class="about-skill-container">
 
-   <section class="about">
-    <div class="about-container">
-      <div class="about-heading">
-        <h2 class="hd-title lg-title">About Myself</h2>
-        <p class="hd-intro-text">
-          Hello I’m a software developer! I can help you build a product ,
-           feature or website. Look through some of my work and experience!
-           If you like what you see and have a project you need coded,
-            don’t hesitate to contact me.
+              <div class="skills">
+                <p><strong>Languages</strong></p>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </li>
+
+            <li>
+              <ul class="about-skill-body-container">
+                <li class="about-skill-body fly-in-1">
+                  <img class="about-skill-body-img" src="./resources/icons/Ellipse javascript .png" alt="js" />
+                  <span class="about-skill-text">JavaScript</span>
+                </li>
+                <li class="about-skill-body fly-in-2">
+                  <img class="about-skill-body-img" src="./resources/icons/Ellipse html .png" alt="html" />
+                  <span class="about-skill-text">HTML</span>
+                </li>
+                <li class="about-skill-body fly-in-3">
+                  <img class="about-skill-body-img" src="./resources/icons/Ellipse css .png" alt="css" />
+                  <span class="about-skill-text">CSS</span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="about-skill-container">
+              <div class="about-skill-heading">
+                <h4 class="about-subheading">Frameworks</h4>
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </li>
+
+            <hr />
+
+            <li class="about-skill-container">
+              <div class="about-skill-heading">
+                <h4 class="about-subheading">Skills</h4>
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </li>
+            <hr />
+
+            </li>
+          </ul>
+
+        </div>
+      </section>
+    </main>
+    <!---------------------------------------About section end--------------------------------------------->
+    <!---------------------------------------Contact form start--------------------------------------------->
+
+    <footer id="contact">
+      <section class="contact-form-container">
+        <h1 class="contact-form-title">
+          Contact me
+        </h1>
+
+        <p class="contact-form-paragraph">
+          If you have an application you are interested in developing,
+          a feature hat you need built or a project that needs
+          coding. I'd love to helpwith it
         </p>
-        <p class="connect">LET'S CONNECT</p>
-        <ul class="social-icons">
-          <li>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-angellist"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-m"></i></a>
-          </li>
-        </ul>
-        <button>Get my resume</button>
-      </div>
-    
-    <ul class="about-skills">
-      <li class="skill-list">
 
-       <div class="skills">
-              <p><strong>Languages</strong></p>
-              <i class="fa-solid fa-angle-down"></i>
-          </div>
-      </li>
-      <li>
-        <ul class="skill-container">
-          <li class="skill-link">
-            <img
-              class="skill-link-img"
-              src="./resources/icons/Ellipse javascript .png"
-              alt="js"
-            />
-            <span class="skill-name">JavaScript</span>
-          </li>
-          <li class="skill-link">
-            <img
-              class="skill-link-img"
-              src="./resources/icons/Ellipse html .png"
-              alt="html"
-            />
-            <span class="skill-name">HTML</span>
-          </li>
-          <li class="skill-link">
-            <img
-              class="skill-link-img"
-              src="./resources/icons/Ellipse css .png"
-              alt="css"
-            />
-            <span class="skill-name">CSS</span>
-          </li>
-        </ul>
-      </li>
-      <li class="skill-list">
-        <div class="skill-heading">
-          <h4 class="subheading">Frameworks</h4>
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
-      </li>
-      <hr />
-      <li class="skill-list">
-        <div class="skill-heading">
-          <h4 class="subheading">Skills</h4>
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
-      </li>
-      <hr />
-   
-      </li>
-    </ul>
-        
-    </div>
-  </section>
+        <form action="https://formspree.io/f/xpzebdqb" method="POST" class="contact-form">
+          <input class="contact-form-text-input" maxlength="30" name="name" type="text"
+            placeholder="Enter your name here" required />
 
-  <!----------------About section end---------------------->
-  <!---------------Contact form start---------------------->
+          <input class="contact-form-text-input" name="email" type="email" placeholder="Enter your email address"
+            required />
 
-  <section class="form-container">
-    <h1 class="contact-title">
-        Contact me
-    </h1>
-    <p class="form-intro">
-        If you have an application you are interested in developing,
-        a feature hat you need built or a project that needs 
-        coding. I'd love to helpwith it
-  </p>
-  <form  action="https://formspree.io/f/xpzebdqb"
-  method="POST" class="contact-form">
-    <input
-      class="text-input"
-      maxlength="30"
-      name="name"
-      type="text"
-      placeholder="Enter your name here" 
-      required />
-      
-      <input
-      class="text-input"
-      name="email"
-      type="email"
-      placeholder="Enter your email address"
-      required />
-    
-      <textarea
-      class="text-input"
-      maxlength="500"
-      name="message"
-      cols="30"
-      rows="9"
-      placeholder="Write your message here"
-      required
-    ></textarea>
-     <button class="form-button" type="submit">
-      Get In Touch
-    </button>
+          <textarea class="contact-form-text-input" maxlength="500" name="message" cols="30" rows="9"
+            placeholder="Write your message here" required></textarea>
+          <button class="contact-form-button" type="submit">
+            Get In Touch
+          </button>
+          <span class="msg"></span>
+        </form>
+      </section>
+    </footer>
+  </Section>
+  <!---------------------------------------end of Contact form---------------------------------------------------->
+  <!---------------------------------------JavaScript Links ---------------------------------------------------->
 
-  </form>    
-</section>
-
-  <!---- -end of Contact form-------------------->
- 
-  
+ <script src="index.js"></script>
 
 </body>
+
 </html>
