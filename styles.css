@@ -6,10 +6,7 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Poppins", sans-serif;
-}
-
+html,
 body {
   background-color: #f7f5f5a3;
   font-family: "Poppins", sans-serif;
@@ -298,7 +295,6 @@ main {
 .hd-title {
   margin: 10px 0;
   display: flex;
-  font-family: 'Poppins'sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
@@ -320,7 +316,6 @@ main {
 
 .heading-paragraph {
   margin: 10px 0;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -753,7 +748,6 @@ button[disabled] {
 }
 
 .about-subheading {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -771,7 +765,6 @@ button[disabled] {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -819,7 +812,6 @@ button[disabled] {
 }
 
 .about-skill-text {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
@@ -863,7 +855,6 @@ button[disabled] {
 .contact-form-paragraph {
   text-align: center;
   margin-top: 0.75em;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -905,12 +896,12 @@ textarea:focus {
 /* Desktop version of site */
 @media screen and (min-width: 768px) {
 
-  .top-bar {
+  .topbar {
     padding: 0.65rem 6rem;
     align-items: center;
     width: 100%;
     background-color: white;
-    height: 50px;
+    height: 70px;
     z-index: 1000;
   }
 
