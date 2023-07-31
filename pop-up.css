@@ -35,7 +35,6 @@ work-section
   padding-right: 0.5rem;
 }
 
-.animate__animated.animate__rotate,
 .animate__animated.animate__fadeIn,
 .animate__animated.animate__zoomIn {
   --animate-duration: 2.5s;
@@ -108,7 +107,7 @@ work-section
   width: 100%;
   overflow: hidden;
   position: relative;
-  animation-name: rotate;
+  animation-name: drop-in;
   animation-duration: 1.5s;
   cursor: pointer;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9), 0 5px 0 0 rgb(159 158 158 / 15%);
