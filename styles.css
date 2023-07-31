@@ -237,6 +237,7 @@ header {
 }
 
 .navbar-link:hover {
+  font-weight: 700;
   color:  #703dc3;
   text-decoration: underline;
   transform: scale(1.07);
@@ -384,6 +385,7 @@ main {
 }
 
 .heading-connect:hover {
+  font-weight: 700;
   color:  #703dc3;
   text-decoration: underline;
   transform: scale(1.07);
