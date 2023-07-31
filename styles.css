@@ -198,6 +198,7 @@ header {
 
 .navbar-link:hover {
   color:  #703dc3;
+  font-weight: 700;
   text-decoration: underline;
   transform: scale(1.07);
   letter-spacing: 2px;
@@ -234,7 +235,7 @@ header {
   width: 100%;
   display: block;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 70px;
   color: #fff;
   gap: 2rem;
@@ -278,7 +279,7 @@ main {
   border-radius: 0 0 0 4rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.19);
   background-color: #fff;
-  background-image: url('./recsources/images/header-shape.png');
+  background-image: url('./resources/images/header-shape.png');
   background-size: 100%;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -345,6 +346,7 @@ main {
 
 .heading-connect:hover {
   color:  #703dc3;
+  font-weight: 700;
   text-decoration: underline;
   transform: scale(1.07);
   letter-spacing: 2px;
@@ -677,7 +679,7 @@ button {
 }
 
 .btn-width {
-  width: 126px;
+  width: 128px;
 }
 
 button::after {
@@ -834,7 +836,7 @@ button[disabled] {
   padding: 3em;
   border-radius: 5em 0 0 0;
   background-color: #6070ff;
-  background-image: url('./recsources/images/contact\ form\ shapes-mobile.png');
+  background-image: url('./resources/images/contact\ form\ shapes-mobile.png');
   background-repeat: no-repeat;
   background-position-x: right;
   background-size: contain;
@@ -954,7 +956,7 @@ textarea:focus {
     border-radius: 0 0 0 6em;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.19);
     background-color: #fff;
-    background-image: url('./recsources/images/Header\ bg.png');
+    background-image: url('./resources/images/Header\ bg.png');
     background-size: 96%;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -1072,7 +1074,7 @@ textarea:focus {
 
   .contact-form-container {
     background-color: #6070ff;
-    background-image: url('./recsources/images/contact\ form\ background\ shapes.png');
+    background-image: url('./resources/images/contact\ form\ background\ shapes.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
