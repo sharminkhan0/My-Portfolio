@@ -463,6 +463,17 @@ textarea:focus {
   to { width: 100% }
 }
 
+/*-----zoom-in animation----*/
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 
 /* ----------Animation end---------*/
 /*------ Desktop version of site-------- */
