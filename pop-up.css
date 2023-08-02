@@ -9,7 +9,7 @@ work-section
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  
+  animation-name: drop-in;
 }
 
 .project-header span {
@@ -51,7 +51,7 @@ work-section
   background-color: white;
   border: 1px solid #4f60f982;
   border-radius: 16px;
-  animation: Fade-in 0.7s ease-in-out;
+  animation: fade-in 0.7s ease-in-out;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 4px rgb(159 158 158 / 15%);
 }
 .card:hover {
@@ -78,7 +78,7 @@ work-section
   justify-content: center;
   transition: all 0.5s ease;
   border: 1px solid #3145f582;
-  animation: fade-in 7s ease-in-out;
+  animation:  drop-in 9s ease infinite;
 }
 
 .inner-card:hover {
@@ -86,7 +86,7 @@ work-section
   border: 1px solid #3145f582;
   transform: scale(1.02);
   transition: all 1.5s ease-in-out;
-  animation-name: drop-in;
+  animation-name: drop-in 1s ease infinite;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   box-shadow: 0 10px 30px rgba(18, 17, 17, 0.9), 0 5px 0 0 rgb(159 158 158 / 15%);
@@ -98,15 +98,17 @@ work-section
   width: 100%;
   overflow: hidden;
   position: relative;
+  animation: drip-in;
   animation-duration: 1.5s;
   cursor: pointer;
+  border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9), 0 5px 0 0 rgb(159 158 158 / 15%);
 }
 
 .card-img,
 .inner-card-img:hover {
   animation: zoom-in 1s ease infinite;
-  animation-duration: 1.7s;
+  animation-duration: 7s;
   box-shadow: 0 10px 30px rgba(18, 17, 17, 0.9), 0 5px 0 0 rgb(159 158 158 / 15%);
 }
 
