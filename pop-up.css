@@ -9,7 +9,7 @@ work-section
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  
+  animation: drop-in;
 }
 
 .project-header span {
@@ -36,7 +36,7 @@ work-section
 }
 
 .animate__animated.animate__fadeIn,
-.animate__animated.animate__zoomIn {
+.animate__animated.animate__dropIn {
   --animate-duration: 2.5s;
 }
 
@@ -53,7 +53,9 @@ work-section
   border-radius: 16px;
   animation: Fade-in cubic-bezier(0.755, 0.05, 0.855, 0.07) ease-in-out;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 4px rgb(159 158 158 / 15%);
+  animation: fade-in;
 }
+
 .card:hover {
   box-shadow: 0 10px 30px 0 #8c38fe, 0 5px 0 0 #9c66e5;
   transform: translateY(-7px);
@@ -78,7 +80,8 @@ work-section
   justify-content: center;
   transition: all 0.5s ease;
   border: 1px solid #3145f582;
-  animation: zoom-in 7s ease-in-out;
+  animation: drop-in 9s ease infinite;
+  cursor: pointer;
 }
 
 .inner-card:hover {
@@ -86,20 +89,11 @@ work-section
   border: 1px solid #3145f582;
   transform: scale(1.02);
   transition: all 1.5s ease-in-out;
-  animation-name: zoom-in;
+  animation: drop-in;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   box-shadow: 0 10px 30px rgba(18, 17, 17, 0.9), 0 5px 0 0 rgb(159 158 158 / 15%);
   background: #ffffff;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .card-img,
@@ -107,7 +101,8 @@ work-section
   width: 100%;
   overflow: hidden;
   position: relative;
-  animation-name: drop-in;
+  border-radius: 12px;
+  animation: drop-in;
   animation-duration: 1.5s;
   cursor: pointer;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9), 0 5px 0 0 rgb(159 158 158 / 15%);
@@ -115,15 +110,28 @@ work-section
 
 .card-img,
 .inner-card-img:hover {
-  animation-name: rotate;
+  animation: zoom-in-zoom-out 9ms ease infinite;
   animation-duration: 1.7s;
   box-shadow: 0 10px 30px rgba(18, 17, 17, 0.9), 0 5px 0 0 rgb(159 158 158 / 15%);
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 .card-details {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
+  animation: drop-in;
 }
 
 .card-details h3 {
@@ -188,9 +196,8 @@ work-section
   filter: drop-shadow(3px 3px 1px rgb(211 211 211));
   z-index: 1;
   cursor: pointer;
-  transform:translateY(-7px);
+  animation: drop-in;
 }
-
 
 .project-footer li {
   background-color: #ebebff;
