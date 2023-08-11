@@ -68,7 +68,7 @@ For more information on the importance of a professional README for your reposit
 
 This is a project I did for my responsive portfolio, utilizing Microverse and GitHub flow professionally to work with HTML, CSS, and JAVASCRIPT, responsive design using Flexbox, a simple structure, and a data query.
 
-My-Portfolio-cover.png
+
 <img src="./recsources/My-Portfolio-cover.png" alt="cover" />
 
 ## 🛠 Built With <a name="built-with"></a>
