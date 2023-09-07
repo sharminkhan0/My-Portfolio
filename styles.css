@@ -41,13 +41,14 @@ header {
   text-decoration: none;
   color: inherit;
   left: 76px;
-  animation: color-change 5s ease-in-out;
-  transition: all 0.5s ease;
+  animation: color-change 7.5s ease-in-out;
+  transition: all .5s ease;
 }
 
 .logo:hover {
   transform: scale(1.07);
   letter-spacing: 2px;
+  animation: color-change 9s ease-in-out;
   transition: all 0.5s ease;
 }
 
