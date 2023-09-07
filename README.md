@@ -33,7 +33,7 @@ For more information on the importance of a professional README for your reposit
   <img src="sharmin-khan-logo-1.png" alt="logo" width="280"  height="auto"  />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+
 
 </div>
 
