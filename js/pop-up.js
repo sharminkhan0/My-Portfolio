@@ -14,18 +14,20 @@ window.onload = () => {
   
     const projectsData = [
       {
-        title: 'Tonic',
-        subtitle: 'CANOPY',
-        techStack: 'Back End Dev',
-        year: 2015,
-        src: './recsources/images/project1.png',
-        highlight: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+        id: 'project1',
+        title: 'Capstone',
+        subtitle: 'CONFARANCE', 
+        techStack: 'Front End Dev',
+        year: 2023,
+        src: './recsources/projects/Capstone-desktop.png',
+        highlight: 'This project is based on an online website for a conference.',
+        description: 'Capstone Project is designed to provide information and resources to students, faculty members, and university visitors, showcasing the academic programs and research opportunities available. Built with HTML, CSS, and JavaScript. The main objective of this project is to start practicing the professional way to work with CSS HTML and JavaScript in responsive design, using the basic structure, data query, flexbox and all following a template in Behance. Capstone Project',
         lang: ['html', 'css', 'javascript'],
-        live: '#',
-        source: '#',
+        live: 'https://sharminkhan0.github.io/Capstone/',
+        source: 'https://github.com/sharminkhan0/Capstone',
       },
       {
+        id: 'project2',
         title: 'Multi Post Stories',
         subtitle: 'CANOPY',
         techStack: 'Back End Dev',
@@ -38,6 +40,7 @@ window.onload = () => {
         source: '#',
       },
       {
+        id: 'project3',
         title: 'Tonic',
         subtitle: 'CANOPY',
         techStack: 'Back End Dev',
@@ -50,6 +53,7 @@ window.onload = () => {
         source: '#',
       },
       {
+        id: 'project4',
         title: 'Multi Post Stories',
         subtitle: 'CANOPY',
         techStack: 'Back End Dev',
